@@ -1,0 +1,38 @@
+html {}
+
+body {
+    // font-family: $ff-reg;
+    // color: $color-dark;
+    max-width: 100vw;
+    width: 100%;
+    // background: $color-light;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.main {
+    width: 100%;
+	margin: 0 auto;
+	cursor: default;
+}
+
+.container {
+    width: 100%;
+	max-width: 1400px;
+	padding: 0 40px;
+	margin: 0 auto;
+    
+    @include screenXS {
+        padding: 0 34px;
+    }
+
+    @include screenXS {
+        padding: 0 20px;
+    }
+}
+
+

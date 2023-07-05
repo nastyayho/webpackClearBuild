@@ -1,0 +1,47 @@
+@mixin hovers {
+    @media screen and (min-width: 771px) {
+        @content;
+    }
+}
+
+@mixin screenXS {
+    @media screen and (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin screenS {
+    @media screen and (max-width: 770px) {
+        @content;
+    }
+}
+
+@mixin screenXM {
+    @media screen and (max-width: 990px) {
+        @content;
+    }
+}
+
+@mixin screenM {
+    @media screen and (max-width: 1140px) {
+        @content;
+    }
+}
+
+@mixin screenL {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin screenXL {
+    @media screen and (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin screenXXL {
+    @media screen and (max-width: 1600px) {
+        @content;
+    }
+}

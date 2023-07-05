@@ -1,0 +1,16 @@
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "variables";
+@import "settings";
+@import "typography";
+@import "layouts";
+
+// страницы 
+// index
+@import "pages/index";
+// главная
+@import "pages/mainPage/mainPage";
+
+
+

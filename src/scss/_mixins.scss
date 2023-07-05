@@ -1,0 +1,29 @@
+@import "./mixins/breakpoint";
+@import "./mixins/stop-scroll";
+@import "./mixins/visually-hidden";
+
+// сделать блок на всю ширину экрана (вытащить из контейнера)
+@mixin all-width {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+
+// скрытый скролл
+@mixin hidden-scroll {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}
+
+// текст не выделяется при нажатии
+@mixin no-selection {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
